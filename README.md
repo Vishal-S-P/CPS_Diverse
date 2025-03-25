@@ -1,1 +1,1 @@
-# CPS_Diverse
+# Consistency Posterior Sampling for Diverse Image Synthesis
