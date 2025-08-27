@@ -1,0 +1,17 @@
+data:
+    dataset: "lsun"
+    category: "bedroom"
+    image_size: 256
+    channels: 3
+    logit_transform: false
+    uniform_dequantization: false
+    gaussian_dequantization: false
+    random_flip: true
+    rescaled: true
+    num_workers: 32
+    out_of_dist: false
+diffusion:
+    beta_schedule: linear
+    beta_start: 0.002
+    beta_end: 80.
+    num_diffusion_timesteps: 1000

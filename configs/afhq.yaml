@@ -1,0 +1,13 @@
+data:
+  dataset: "AFHQ"
+  category: ""
+  image_size: 256
+  channels: 3
+  logit_transform: false
+  uniform_dequantization: false
+  gaussian_dequantization: false
+  random_flip: false
+  rescaled: false
+  num_workers: 32
+  out_of_dist: false
+
