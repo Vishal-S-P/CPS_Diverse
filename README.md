@@ -1,8 +1,8 @@
 # [CVPR 2025] Consistency Posterior Sampling for Diverse Image Synthesis
-![alt text](https://github.com/Vishal-S-P/CPS_Diverse/contents/title_fig.png?raw=true)
+![Alt text](CPS_Diverse/contents/title_fig.png?raw=trues)
 ## Pretrained Consistency Models
 
-
+s
 ## Datasets
 
 
