@@ -1,5 +1,5 @@
 # [CVPR 2025] Consistency Posterior Sampling for Diverse Image Synthesis
-![Alt text](/contents/title_fig.png?raw=trues)
+![Alt text](/contents/title_fig.jpg?raw=trues)
 ## Pretrained Consistency Models
 
 s
