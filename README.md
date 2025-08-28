@@ -22,7 +22,7 @@ Download datasets from following links and place them in 'sample_dataset' folder
 | LSUN-Bedroom     |  
 | ImageNet   |    |     
 
-## Fidelity Experiments
+## ⚙️ Fidelity Experiments
 ```bash
 # LSUN-Beadroom (256 x 256)
 
@@ -57,12 +57,22 @@ CPS_Diverse/scripts/fidelity_exps/solve_pixel_inpaint_our_method_CD_LPIPS_20_one
 CPS_Diverse/scripts/fidelity_exps/solve_pixel_inpaint_our_method_CD_LPIPS_20_multi_step.sh
 
 ```
-## Diversity Experiments
+## ⚙️ Diversity Experiments
 ```bash
 # LSUN-Beadroom (256 x 256)
+
 ## 8x Super-Resolution
+CPS_Diverse/scripts/diversity_exps/solve_SR_our_method_CD_LPIPS_8x_one_step.sh
+CPS_Diverse/scripts/diversity_exps/solve_SR_our_method_CD_LPIPS_8x_multi_step.sh
+
 ## Gaussian Deblur
+CPS_Diverse/scripts/diversity_exps/solve_GD_our_method_CD_LPIPS_one_step.sh
+CPS_Diverse/scripts/diversity_exps/solve_GD_our_method_CD_LPIPS_multi_step.sh
+
 ## Random pixel inpainting (10%)
+CPS_Diverse/scripts/diversity_exps/solve_pixel_inpaint_our_method_CD_LPIPS_10_one_step.sh
+CPS_Diverse/scripts/diversity_exps/solve_pixel_inpaint_our_method_CD_LPIPS_10_multi_step.sh
+
 ## Nonlinear Deblur
 ## Phase Retrieval
 ## HDR Reconstruction
