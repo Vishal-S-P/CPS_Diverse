@@ -24,19 +24,31 @@ Download datasets from following links and place them in 'sample_dataset' folder
 
 ## Fidelity Experiments
 ```bash
-# 8x Super-Resolution
+# LSUN-Beadroom (256 x 256)
+## 8x Super-Resolution
+## Gaussian Deblur
+## Random pixel inpainting (10%)
+## Nonlinear Deblur
+## Phase Retrieval
+## HDR Reconstruction
 
-### Linear inverse problem
+# ImageNet (64 x 64)
+## 4x Super-Resolution
+## Gaussian Deblur
+## Random pixel inpainting (20%)
 
-### Non-Linear inverse problem
 
-
+```
 ## Diversity Experiments
-
-
-### Linear inverse problem
-
-### Non-Linear inverse problem
+```bash
+# LSUN-Beadroom (256 x 256)
+## 8x Super-Resolution
+## Gaussian Deblur
+## Random pixel inpainting (10%)
+## Nonlinear Deblur
+## Phase Retrieval
+## HDR Reconstruction
+```
 
 ## Acknowledgments
 
