@@ -24,7 +24,7 @@ Download datasets from following links and place them in 'sample_dataset' folder
 
 ## ⚙️ Fidelity Experiments
 ```bash
-# LSUN-Beadroom (256 x 256)
+#------------------------------------ LSUN-Beadroom (256 x 256) ------------------------------------
 
 ## 8x Super-Resolution
 CPS_Diverse/scripts/fidelity_exps/solve_SR_our_method_CD_LPIPS_8x_one_step.sh
@@ -42,7 +42,7 @@ CPS_Diverse/scripts/fidelity_exps/solve_pixel_inpaint_our_method_CD_LPIPS_10_mul
 ## Phase Retrieval
 ## HDR Reconstruction
 
-# ImageNet (64 x 64)
+#------------------------------------ ImageNet (64 x 64) ------------------------------------ 
 
 ## 4x Super-Resolution
 CPS_Diverse/scripts/fidelity_exps/solve_SR_our_method_CD_LPIPS_4x_one_step.sh
