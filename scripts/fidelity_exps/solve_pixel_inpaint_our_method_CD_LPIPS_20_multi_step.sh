@@ -13,40 +13,36 @@ MODEL="cm"
 CKPT_PTH="/depot/qqiu/data/vishal/03_Flow_Posterior_Sampling/flowinverse_matt/00_pre_trained_models/CM_models/cd_bedroom256_lpips.pt"
 
 # Degradation args
-DEG="sr_avgpooling"
-DEG_SCALE=4.0 # this does nothing in denoising case # for inpainting and SR use
+DEG="random_pixel_inpaint"
+DEG_SCALE=10.0 # this does nothing in denoising case # for inpainting and SR use
 SIGMA=0.1 # the true noise level of inverse problem
 MASK_PTH="/depot/qqiu/data/vishal/03_Flow_Posterior_Sampling/flowinverse_matt/00_masks"
 
-USR_EXP_NAME="multi_step"
 # Sampling related args
 SAMPLING_METHOD="fps" # can also use dflow for lbfgs optimization
 SDE_SOLVER="EM" # can be EM, EI, or GD
 COND_SIGMA=0.1 # must be positive, typically should be the same as SIGMA
-TAU=1.5e-4 # does not matter when we are decaying the tau value in prefixed range
+TAU=1.0e-5 # does not matter when we are decaying the tau value in prefixed range
 BLEND_ALPHA=0.45 # blend init hyper-parameter
 INIT_TYPE="warm" # can be rand, Apy, or gt
 WARM_INIT_TYPE="rand"
 WARM_SOLVER="ADAM"
 WARM_LR=0.005 # not applicable for SAM warmup
 WARM_MOMENTUM=0.9
-WARM_STEPS=500
-NUM_LANG_STEPS=50 
+WARM_STEPS=800
+NUM_LANG_STEPS=10 
 ODE_GRAD=cm # use consistency model to get the gradients
 CM_SOLVER="multistep" # supported solvers - "heun", "dpm", "ancestral", "onestep", "progdist", "euler", "multistep"
 NUM_DIFFUSION_STEPS=40 # this is useful for multi-step solver.
-NUM_CM_STEPS=5 # (only for multistep solvers) there is limit as to how many steps we need to use depending on inverse problem 
+NUM_CM_STEPS=3 # (only for multistep solvers) there is limit as to how many steps we need to use depending on inverse problem 
 
 # Regularizer related args 
 REG="none"
 REG_LAM=0.01
 
 # book-keeping
-NUM_PLOT=10 # number of samples to plot 
-
-# For dynamic tau (only enabled via flag)
-DYNAMIC_TAU_HISTORY=5
-NUM_PER_IMG=1
+NUM_PLOT=100 # number of samples to plot 
+PLOT_ALL=True
 
 python $SCRIPT \
   --model=$MODEL \
@@ -78,5 +74,5 @@ python $SCRIPT \
   --num_lang_steps=$NUM_LANG_STEPS \
   --regularizer=$REG \
   --reg_lam=$REG_LAM \
-  --plot_all=True \
+  --plot_all=$PLOT_ALL \
   --verbose \
