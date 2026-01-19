@@ -71,4 +71,4 @@ CPS_Diverse/scripts/diversity_exps/solve_pixel_inpaint_our_method_CD_LPIPS_10_mu
 
 ## Acknowledgments
 
-Thanks to the open source codebases. Our codebase is built on them.
+Thanks for open source efforts [Cosistency Models codebase](https://github.com/openai/consistency_models). Our code is also built using [DPS](https://github.com/DPS2022/diffusion-posterior-sampling). 
