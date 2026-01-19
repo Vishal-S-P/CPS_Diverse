@@ -12,15 +12,11 @@ pip install -r requirements.txt
 Download pretrained diffusion and consistency models from following links and place them in 'pretrained_models' folder -
 | Dataset | Diffusion Model | Consistency Model |
 | :------- |:--------:| --------:|
-| LSUN-Bedroom     |  |     |
-| ImageNet   |    |     |
+| LSUN-Bedroom     | [LSUN-Bedroom-DM](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/lsun_bedroom.pt)  |  [LSUN-Bedroom-CM](https://openaipublic.blob.core.windows.net/consistency/cd_bedroom256_l2.pt)   |
+| ImageNet   |  [ImageNet-DM](https://openaipublic.blob.core.windows.net/diffusion/jul-2021/256x256_diffusion_uncond.pt)  |  [ImageNet-CM](https://openaipublic.blob.core.windows.net/consistency/cd_imagenet64_l2.pt)   |
 
-Download datasets from following links and place them in 'sample_dataset' folder -
-
-| Dataset | Link |
-| :------- |:--------:| 
-| LSUN-Bedroom     |  
-| ImageNet   |    |     
+Download datasets from [OpenAI repo](https://github.com/openai/improved-diffusion/tree/main/datasets) and place them in 'sample_dataset' folder.
+ 
 
 ## ⚙️ Fidelity Experiments
 ```bash
@@ -38,9 +34,6 @@ CPS_Diverse/scripts/fidelity_exps/solve_GD_our_method_CD_LPIPS_multi_step.sh
 CPS_Diverse/scripts/fidelity_exps/solve_pixel_inpaint_our_method_CD_LPIPS_10_one_step.sh
 CPS_Diverse/scripts/fidelity_exps/solve_pixel_inpaint_our_method_CD_LPIPS_10_multi_step.sh
 
-## Nonlinear Deblur
-## Phase Retrieval
-## HDR Reconstruction
 
 #------------------------------------ ImageNet (64 x 64) ------------------------------------ 
 
@@ -73,9 +66,7 @@ CPS_Diverse/scripts/diversity_exps/solve_GD_our_method_CD_LPIPS_multi_step.sh
 CPS_Diverse/scripts/diversity_exps/solve_pixel_inpaint_our_method_CD_LPIPS_10_one_step.sh
 CPS_Diverse/scripts/diversity_exps/solve_pixel_inpaint_our_method_CD_LPIPS_10_multi_step.sh
 
-## Nonlinear Deblur
-## Phase Retrieval
-## HDR Reconstruction
+
 ```
 
 ## Acknowledgments
